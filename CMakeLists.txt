@@ -240,8 +240,7 @@ target_include_directories(LaTeX PUBLIC src)
 target_compile_options(LaTeX PRIVATE
   -Wno-tautological-constant-out-of-range-compare
   -Wno-unused-result
-  -Wno-switch
-  -Wno-unused-includes)
+  -Wno-switch)
   target_compile_definitions(LaTeX PRIVATE _CRT_SECURE_NO_WARNINGS)
 option(HAVE_LOG "If enable log" OFF)
 if (HAVE_LOG)
